@@ -1,0 +1,46 @@
+fixture_id,geometry_type,sequence,x_m,y_m,z_m,radius_m,closed,notes
+A-clean-rectangle,polyline,0,0,0,0,,true,
+A-clean-rectangle,polyline,1,40,0,0,,true,
+A-clean-rectangle,polyline,2,40,20,0,,true,
+A-clean-rectangle,polyline,3,0,20,0,,true,
+A-clean-rectangle,polyline,4,0,0,0,,true,Repeated start point closes the polyline
+B-survey-boundary,polyline,0,0,0,0,,true,
+B-survey-boundary,polyline,1,12,0.15,0,,true,
+B-survey-boundary,polyline,2,24,0,0,,true,
+B-survey-boundary,polyline,3,31,7,0,,true,
+B-survey-boundary,polyline,4,30.8,18,0,,true,
+B-survey-boundary,polyline,5,14,24,0,,true,
+B-survey-boundary,polyline,6,0.2,17.8,0,,true,
+B-survey-boundary,polyline,7,0,0,0,,true,Repeated start point closes the polyline
+C-open-boundary,polyline,0,0,0,0,,false,
+C-open-boundary,polyline,1,10,0,0,,false,
+C-open-boundary,polyline,2,10,10,0,,false,
+D-non-planar-boundary,polyline,0,0,0,0,,true,
+D-non-planar-boundary,polyline,1,10,0,0,,true,
+D-non-planar-boundary,polyline,2,10,10,1,,true,
+D-non-planar-boundary,polyline,3,0,10,0,,true,
+D-non-planar-boundary,polyline,4,0,0,0,,true,Repeated start point closes the polyline
+E-non-polyline-circle,circle,0,0,0,0,50,true,Analytic circle used to exercise DivideByCount(200)
+F-short-edge,polyline,0,0,0,0,,true,
+F-short-edge,polyline,1,20,0,0,,true,
+F-short-edge,polyline,2,20,0.5,0,,true,This 0.5 m segment is below MinEdgeLength
+F-short-edge,polyline,3,20,20,0,,true,
+F-short-edge,polyline,4,0,20,0,,true,
+F-short-edge,polyline,5,0,0,0,,true,Repeated start point closes the polyline
+G-near-parallel,polyline,0,0,0,0,,true,
+G-near-parallel,polyline,1,10,0,0,,true,
+G-near-parallel,polyline,2,20,0.5,0,,true,Successive bearings differ by approximately 2.862 degrees
+G-near-parallel,polyline,3,20,20,0,,true,
+G-near-parallel,polyline,4,0,20,0,,true,
+G-near-parallel,polyline,5,0,0,0,,true,Repeated start point closes the polyline
+H-collapsed-boundary,polyline,0,0,0,0,,true,
+H-collapsed-boundary,polyline,1,0.2,0,0,,true,
+H-collapsed-boundary,polyline,2,0.2,0.2,0,,true,
+H-collapsed-boundary,polyline,3,0,0.2,0,,true,
+H-collapsed-boundary,polyline,4,0,0,0,,true,All edges are below MinEdgeLength
+I-zero-area-bow-tie,polyline,0,0,0,0,,true,
+I-zero-area-bow-tie,polyline,1,10,10,0,,true,
+I-zero-area-bow-tie,polyline,2,0,10,0,,true,
+I-zero-area-bow-tie,polyline,3,10,0,0,,true,
+I-zero-area-bow-tie,polyline,4,0,0,0,,true,Self-intersection gives zero signed area
+J-small-converted-circle,circle,0,0,0,0,10,true,Reference conversion collapses because every divided segment is below 1.0 m
